@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :subjects
+  resources :risyus do
+    collection do
+      get 'import_csv_new'
+      post 'import_csv'
+    end
+  end
 end

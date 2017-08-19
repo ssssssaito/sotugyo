@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sub_num: MyText
+  sub_name: MyText
+  credit: MyText
+  grade: MyText
+  term: MyText
+  period: MyText
+  room: MyText
+  teacher: MyText
+  summary: MyText
+
+two:
+  sub_num: MyText
+  sub_name: MyText
+  credit: MyText
+  grade: MyText
+  term: MyText
+  period: MyText
+  room: MyText
+  teacher: MyText
+  summary: MyText

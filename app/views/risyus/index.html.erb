@@ -1,0 +1,26 @@
+<h1>履修科目</h1>
+<table border="1">
+  <thead>
+    <tr>
+      <th>sid</th>
+      <th>sub_num</th>
+      <th>sub_name</th>
+      <th>credit</th>
+      <th>result</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ris.each do |ri| %>
+    <tr>
+      <td><%= ri.student_num %></td>
+      <td><%= ri.sub_num %></td>
+      <td><%= ri.sub_name %></td>
+      <td><%= ri.credit %></td>
+      <td><%= ri.result %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= @ris.sum(:credit) %>
