@@ -1,9 +1,8 @@
 class RisyusController < ApplicationController
   def index
     @ris = Risyu.joins(:subject).select("risyus.*, subjects.*")
-  end
-
-  def create
+    @sen = Risyu.joins(:subject).where("subjects.sub_num like ?", "GC5%").select("risyus.*, subjects.*")
+    @senki = Risyu.joins(:subject).where("subjects.sub_num like ?", "[A-G]*").select("risyus.*, subjects.*")
   end
 
   def new

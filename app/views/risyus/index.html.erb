@@ -11,7 +11,7 @@
   </thead>
 
   <tbody>
-    <% @ris.each do |ri| %>
+    <% @senki.each do |ri| %>
     <tr>
       <td><%= ri.student_num %></td>
       <td><%= ri.sub_num %></td>
@@ -22,5 +22,3 @@
     <% end %>
   </tbody>
 </table>
-
-<%= @ris.sum(:credit) %>
